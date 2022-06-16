@@ -1,0 +1,8 @@
+services:
+	- App\Router\RouterFactory::createRouter
+	- App\Model\VoucherFacade
+	- App\Model\ActivationFacade
+	- App\Model\UserFacade
+	- App\Services\ActivationManager
+	- App\Services\VoucherGenerator
+	- App\Security\AppAuthenticator

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>{ifset title}{include title}{/ifset}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{$basePath}/assets/images/favicon.ico">
+
+    <link href="{$basePath}/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- Icons Css -->
+    <link href="{$basePath}/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <link href="{$basePath}/assets/css/app.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+
+<div class="auth-page">
+    <div class="container-fluid justify-content-center p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 mx-auto">
+                <div class="auth-full-page-content d-flex p-sm-5 p-4">
+                    <div class="w-100">
+                        <div class="d-flex flex-column h-100">
+                            <div class="auth-content my-auto">
+                                {include content}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end auth full page content -->
+            </div>
+            <!-- end col -->
+
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container fluid -->
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="{$basePath}/assets/libs/jquery/jquery.min.js"></script>
+<script src="{$basePath}/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{$basePath}/assets/libs/metismenu/metismenu.min.js"></script>
+<script src="{$basePath}/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="{$basePath}/assets/libs/node-waves/waves.min.js"></script>
+<script src="{$basePath}/assets/libs/feather-icons/feather.min.js"></script>
+<!-- pace js -->
+
+
+<!-- App js -->
+<script src="{$basePath}/assets/js/app.js"></script>
+
+
+</body>
+</html>

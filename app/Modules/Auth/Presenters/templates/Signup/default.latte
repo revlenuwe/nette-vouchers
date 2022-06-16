@@ -1,0 +1,41 @@
+{block content}
+<div class="text-center">
+    <h5 class="mb-0">Sign up</h5>
+</div>
+<form n:name="signupForm" class="custom-form mt-4 pt-2">
+{*    Update *}
+{*    <div class="mb-3">*}
+{*        <label class="form-label">Email</label>*}
+{*        <input type="text" class="form-control" placeholder="Enter email">*}
+{*    </div>*}
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" n:name="username" class="form-control" placeholder="Enter username">
+    </div>
+    <div class="mb-3">
+        <div class="d-flex align-items-start">
+            <div class="flex-grow-1">
+                <label class="form-label">Password</label>
+            </div>
+        </div>
+
+        <div class="input-group auth-pass-inputgroup">
+            <input type="password" n:name="password" class="form-control" placeholder="Enter password">
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="d-flex align-items-start">
+            <div class="flex-grow-1">
+                <label class="form-label">Password confirmation</label>
+            </div>
+        </div>
+
+        <div class="input-group auth-pass-inputgroup">
+            <input type="password" n:name="password_confirmation" class="form-control" placeholder="Enter password confirmation">
+        </div>
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Sign Up</button>
+    </div>
+</form>
+{/block}

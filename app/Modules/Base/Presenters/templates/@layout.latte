@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>{ifset title}{include title}{/ifset}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<link href="{$basePath}/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="{$basePath}/assets/libs/datatables/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="{$basePath}/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+	<link href="{$basePath}/assets/css/app.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header id="page-topbar">
+	{include 'partials/header.latte'}
+</header>
+
+<div class="bg-soft-primary align-items-center d-flex min-vh-100">
+	<div class="page-content w-100">
+		{include content}
+	</div>
+</div>
+
+<script
+		src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"></script>
+<script src="{$basePath}/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{$basePath}/assets/libs/metismenu/metismenu.min.js"></script>
+<script src="{$basePath}/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="{$basePath}/assets/libs/node-waves/waves.min.js"></script>
+<script src="{$basePath}/assets/libs/feather-icons/feather.min.js"></script>
+
+
+<script src="{$basePath}/assets/js/app.js"></script>
+{block scripts}
+
+</body>
+</html>
